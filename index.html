@@ -22,25 +22,7 @@
     <div class="cinematic-vignette"></div>
   </div>
 
-  <!-- Minimal Top Floating Header Bar -->
-  <header class="floating-header">
-    <div class="brand-logo">
-      <span class="pulse-dot"></span>
-      PORTFOLIO
-    </div>
 
-    <div class="header-actions">
-      <a href="user_agent_video.mp4" download="user_agent_video.mp4" class="nav-btn primary">
-        <i data-lucide="video"></i> Download Video
-      </a>
-      <a href="video_frames_png.zip" download="video_frames_png.zip" class="nav-btn secondary">
-        <i data-lucide="archive"></i> Download Frames
-      </a>
-      <button class="autoplay-btn" id="toggle-autoplay">
-        <i data-lucide="play"></i> Auto-Play
-      </button>
-    </div>
-  </header>
 
   <!-- Main Scrollable Content Container (Strict Left Column for 0 Face Overlap) -->
   <main class="scroll-container">
@@ -50,207 +32,203 @@
       <div class="hero-unboxed fade-up">
         <h1 class="hero-name-bold">DIYA PATEL</h1>
 
-        <div class="scroll-prompt">
-          <div class="mouse-icon">
-            <div class="mouse-wheel"></div>
-          </div>
-          <span>SCROLL DOWN TO EXPLORE</span>
-        </div>
-      </div>
-    </section>
 
-    <!-- Section 2: Technical Skills -->
-    <section class="portfolio-section" id="sec-skills">
-      <div class="left-glass-card fade-up">
-        <div class="card-header">
-          <div class="card-badge">
-            <i data-lucide="code-2"></i> TECHNICAL STACK
-          </div>
-          <h2 class="card-title">SKILLS</h2>
-        </div>
+        <!-- Section 2: Technical Skills -->
+        <section class="portfolio-section" id="sec-skills">
+          <div class="left-glass-card fade-up">
+            <div class="card-header">
+              <div class="card-badge">
+                <i data-lucide="code-2"></i> TECHNICAL STACK
+              </div>
+              <h2 class="card-title">SKILLS</h2>
+            </div>
 
-        <div class="skills-grid">
-          <div class="skill-chip">
-            <div class="chip-icon"><i data-lucide="file-code-2"></i></div>
-            <div class="chip-info">
-              <span class="chip-name">Python</span>
-              <span class="chip-level">Core & Data Science</span>
+            <div class="skills-grid">
+              <div class="skill-chip">
+                <div class="chip-icon"><i data-lucide="file-code-2"></i></div>
+                <div class="chip-info">
+                  <span class="chip-name">Python</span>
+                  <span class="chip-level">Core & Data Science</span>
+                </div>
+              </div>
+
+              <div class="skill-chip">
+                <div class="chip-icon"><i data-lucide="binary"></i></div>
+                <div class="chip-info">
+                  <span class="chip-name">NumPy</span>
+                  <span class="chip-level">Numerical Computing</span>
+                </div>
+              </div>
+
+              <div class="skill-chip">
+                <div class="chip-icon"><i data-lucide="table"></i></div>
+                <div class="chip-info">
+                  <span class="chip-name">Pandas</span>
+                  <span class="chip-level">Data Analysis & Manipulation</span>
+                </div>
+              </div>
+
+              <div class="skill-chip">
+                <div class="chip-icon"><i data-lucide="coffee"></i></div>
+                <div class="chip-info">
+                  <span class="chip-name">Java</span>
+                  <span class="chip-level">Object-Oriented Programming</span>
+                </div>
+              </div>
+
+              <div class="skill-chip">
+                <div class="chip-icon"><i data-lucide="cpu"></i></div>
+                <div class="chip-info">
+                  <span class="chip-name">C</span>
+                  <span class="chip-level">Low-Level Systems & Memory</span>
+                </div>
+              </div>
             </div>
           </div>
+        </section>
 
-          <div class="skill-chip">
-            <div class="chip-icon"><i data-lucide="binary"></i></div>
-            <div class="chip-info">
-              <span class="chip-name">NumPy</span>
-              <span class="chip-level">Numerical Computing</span>
+        <!-- Section 3: Education (Exactly 2 Parts: School & Integrated Student) -->
+        <section class="portfolio-section" id="sec-education">
+          <div class="left-glass-card fade-up">
+            <div class="card-header">
+              <div class="card-badge">
+                <i data-lucide="graduation-cap"></i> ACADEMIC BACKGROUND
+              </div>
+              <h2 class="card-title">EDUCATION</h2>
+            </div>
+
+            <div class="education-grid">
+              <div class="edu-card">
+                <span class="edu-tag">INTEGRATED STUDENT</span>
+                <h3 class="edu-title">Nirmala Memorial College</h3>
+                <p class="edu-desc">Integrated 11th & 12th Academic Program</p>
+              </div>
+
+              <div class="edu-card">
+                <span class="edu-tag">SCHOOL</span>
+                <h3 class="edu-title">Poorna Prajna High School</h3>
+                <p class="edu-desc">Secondary Schooling Certification</p>
+              </div>
             </div>
           </div>
+        </section>
 
-          <div class="skill-chip">
-            <div class="chip-icon"><i data-lucide="table"></i></div>
-            <div class="chip-info">
-              <span class="chip-name">Pandas</span>
-              <span class="chip-level">Data Analysis & Manipulation</span>
+        <!-- Section 4: Projects (Spotify Tracks Dashboard) -->
+        <section class="portfolio-section" id="sec-projects">
+          <div class="left-glass-card fade-up">
+            <div class="card-header">
+              <div class="card-badge">
+                <i data-lucide="folder-git-2"></i> FEATURED PROJECT
+              </div>
+              <h2 class="card-title">PROJECTS</h2>
+            </div>
+
+            <div class="project-card">
+              <div class="project-header">
+                <div class="project-icon"><i data-lucide="music"></i></div>
+                <div>
+                  <h3 class="project-title">Spotify Tracks Dashboard</h3>
+                  <span class="project-tech">Python • Streamlit • Pandas</span>
+                </div>
+              </div>
+
+              <p class="project-desc">
+                An interactive data analytics and visualization dashboard that analyzes Spotify music tracks, audio
+                features, popularity metrics, and trends.
+              </p>
+
+              <div class="project-links">
+                <a href="https://spotify-tracks.streamlit.app/" target="_blank" rel="noopener"
+                  class="btn btn-primary project-btn">
+                  <i data-lucide="external-link"></i> Live Dashboard
+                </a>
+                <a href="https://github.com/PatelDiya18/Spotify-tracks-dashboard.git" target="_blank" rel="noopener"
+                  class="btn btn-secondary project-btn">
+                  <i data-lucide="github"></i> GitHub Code
+                </a>
+              </div>
             </div>
           </div>
+        </section>
 
-          <div class="skill-chip">
-            <div class="chip-icon"><i data-lucide="coffee"></i></div>
-            <div class="chip-info">
-              <span class="chip-name">Java</span>
-              <span class="chip-level">Object-Oriented Programming</span>
+        <!-- Section 5: Achievements -->
+        <section class="portfolio-section" id="sec-achievements">
+          <div class="left-glass-card fade-up">
+            <div class="card-header">
+              <div class="card-badge">
+                <i data-lucide="trophy"></i> ACADEMIC EXCELLENCE
+              </div>
+              <h2 class="card-title">ACHIEVEMENTS</h2>
+            </div>
+
+            <div class="achievements-grid">
+              <div class="achievement-card">
+                <div class="achievement-value">97.7</div>
+                <div class="achievement-label">CET SCORE</div>
+                <p class="achievement-desc">Top Percentile Achievement</p>
+              </div>
+
+              <div class="achievement-card">
+                <div class="achievement-value">9.81</div>
+                <div class="achievement-label">SEM 1 CGPA</div>
+                <p class="achievement-desc">High Academic Distinction</p>
+              </div>
+
+              <div class="achievement-card">
+                <div class="achievement-value">9.48</div>
+                <div class="achievement-label">SEM 2 CGPA</div>
+                <p class="achievement-desc">High Academic Distinction</p>
+              </div>
             </div>
           </div>
+        </section>
 
-          <div class="skill-chip">
-            <div class="chip-icon"><i data-lucide="cpu"></i></div>
-            <div class="chip-info">
-              <span class="chip-name">C</span>
-              <span class="chip-level">Low-Level Systems & Memory</span>
+        <!-- Section 6: My Goal Section -->
+        <section class="portfolio-section" id="sec-goal">
+          <div class="left-glass-card fade-up">
+            <div class="card-header">
+              <div class="card-badge">
+                <i data-lucide="target"></i> CAREER ASPIRATION
+              </div>
+              <h2 class="card-title">MY GOAL</h2>
+            </div>
+            <div class="goal-card-highlight">
+              <div class="goal-box">
+                <div class="goal-icon"><i data-lucide="brain-circuit"></i></div>
+                <p class="goal-text">
+                  GOAL: Become a ML Engineer<br>
+                  Now Learning: Python libraries for data analysis & machine learning<br>
+                  Up Next: Deep Learning, NLP & Large Language Models (LLMs)<br>
+                  Philosophy: Learn by building projects step by step</strong>.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 3: Education (Exactly 2 Parts: School & Integrated Student) -->
-    <section class="portfolio-section" id="sec-education">
-      <div class="left-glass-card fade-up">
-        <div class="card-header">
-          <div class="card-badge">
-            <i data-lucide="graduation-cap"></i> ACADEMIC BACKGROUND
-          </div>
-          <h2 class="card-title">EDUCATION</h2>
-        </div>
-
-        <div class="education-grid">
-          <div class="edu-card">
-            <span class="edu-tag">INTEGRATED STUDENT</span>
-            <h3 class="edu-title">Nirmala Memorial College</h3>
-            <p class="edu-desc">Integrated 11th & 12th Academic Program</p>
-          </div>
-
-          <div class="edu-card">
-            <span class="edu-tag">SCHOOL</span>
-            <h3 class="edu-title">Poorna Prajna High School</h3>
-            <p class="edu-desc">Secondary Schooling Certification</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 4: Projects (Spotify Tracks Dashboard) -->
-    <section class="portfolio-section" id="sec-projects">
-      <div class="left-glass-card fade-up">
-        <div class="card-header">
-          <div class="card-badge">
-            <i data-lucide="folder-git-2"></i> FEATURED PROJECT
-          </div>
-          <h2 class="card-title">PROJECTS</h2>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon"><i data-lucide="music"></i></div>
-            <div>
-              <h3 class="project-title">Spotify Tracks Dashboard</h3>
-              <span class="project-tech">Python • Streamlit • Pandas</span>
-            </div>
-          </div>
-
-          <p class="project-desc">
-            An interactive data analytics and visualization dashboard that analyzes Spotify music tracks, audio
-            features, popularity metrics, and trends.
-          </p>
-
-          <div class="project-links">
-            <a href="https://spotify-tracks.streamlit.app/" target="_blank" rel="noopener"
-              class="btn btn-primary project-btn">
-              <i data-lucide="external-link"></i> Live Dashboard
+        </section>
+        <div class="about-container goal-box">
+          <h3>ABOUT ME</h3>
+          <div class="links-grid">
+            <a href="https://www.linkedin.com/in/diya-patel-978410415" target="_blank" class="goal-card-highlight">
+              <div class="goal-icon">💼</div>
+              <div>
+                <strong>LinkedIn</strong>
+                <p>Connect professionally</p>
+              </div>
             </a>
-            <a href="https://github.com/PatelDiya18/Spotify-tracks-dashboard.git" target="_blank" rel="noopener"
-              class="btn btn-secondary project-btn">
-              <i data-lucide="github"></i> GitHub Code
+            <a href="https://github.com/PatelDiya18" target="_blank" class="goal-card-highlight">
+              <div class="goal-icon">💻</div>
+              <div>
+                <strong>GitHub</strong>
+                <p>View my repositories</p>
+              </div>
             </a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Section 5: Achievements -->
-    <section class="portfolio-section" id="sec-achievements">
-      <div class="left-glass-card fade-up">
-        <div class="card-header">
-          <div class="card-badge">
-            <i data-lucide="trophy"></i> ACADEMIC EXCELLENCE
-          </div>
-          <h2 class="card-title">ACHIEVEMENTS</h2>
-        </div>
-
-        <div class="achievements-grid">
-          <div class="achievement-card">
-            <div class="achievement-value">97.7</div>
-            <div class="achievement-label">CET SCORE</div>
-            <p class="achievement-desc">Top Percentile Achievement</p>
-          </div>
-
-          <div class="achievement-card">
-            <div class="achievement-value">9.81</div>
-            <div class="achievement-label">SEM 1 CGPA</div>
-            <p class="achievement-desc">High Academic Distinction</p>
-          </div>
-
-          <div class="achievement-card">
-            <div class="achievement-value">9.48</div>
-            <div class="achievement-label">SEM 2 CGPA</div>
-            <p class="achievement-desc">High Academic Distinction</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 6: My Goal Section -->
-    <section class="portfolio-section" id="sec-goal">
-      <div class="left-glass-card goal-card-highlight fade-up">
-        <div class="card-header">
-          <div class="card-badge">
-            <i data-lucide="target"></i> CAREER ASPIRATION
-          </div>
-          <h2 class="card-title">MY GOAL</h2>
-        </div>
-
-        <div class="goal-box">
-          <div class="goal-icon"><i data-lucide="brain-circuit"></i></div>
-          <p class="goal-text">
-            Even though I am a complete beginner, my goal is to become an exceptional <strong>Machine Learning
-              Engineer</strong>.
-          </p>
-        </div>
-
-        <!-- Download Buttons -->
-        <div class="download-footer-box">
-          <a href="user_agent_video.mp4" download="user_agent_video.mp4" class="btn btn-primary">
-            <i data-lucide="video"></i> Download Video (.MP4)
-          </a>
-          <a href="video_frames_png.zip" download="video_frames_png.zip" class="btn btn-secondary">
-            <i data-lucide="archive"></i> Download Frames (.ZIP)
-          </a>
-        </div>
-      </div>
-    </section>
 
   </main>
 
-  <!-- Bottom Scrub Progress Indicator -->
-  <div class="scrub-bar-container">
-    <div class="scrub-status">
-      <span id="frame-counter">FRAME 001 / 180</span>
-      <span id="scrub-percentage">0%</span>
-    </div>
-    <div class="scrub-track">
-      <div class="scrub-progress" id="scrub-progress"></div>
-    </div>
-  </div>
+
 
   <script src="app.js"></script>
   <script>

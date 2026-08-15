@@ -21,7 +21,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   background-color: var(--bg-dark);
   color: var(--text-main);
   font-family: var(--font-body);
@@ -34,9 +35,11 @@ html, body {
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--bg-dark);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--primary-red);
   border-radius: 3px;
@@ -68,6 +71,7 @@ html, body {
   filter: blur(140px);
   pointer-events: none;
 }
+
 .glow-1 {
   top: -10%;
   left: -10%;
@@ -75,6 +79,7 @@ html, body {
   height: 45vw;
   background: radial-gradient(circle, rgba(229, 9, 20, 0.25), transparent 70%);
 }
+
 .glow-2 {
   bottom: -15%;
   right: -10%;
@@ -131,8 +136,17 @@ html, body {
 }
 
 @keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.3); opacity: 0.5; }
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.3);
+    opacity: 0.5;
+  }
 }
 
 .header-actions {
@@ -272,8 +286,15 @@ html, body {
 }
 
 @keyframes scroll-wheel {
-  0% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(9px); opacity: 0; }
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(9px);
+    opacity: 0;
+  }
 }
 
 /* -------------------------------------------------------------
@@ -286,7 +307,8 @@ html, body {
   border-radius: 28px;
   padding: 2.75rem;
   width: 100%;
-  max-width: 520px; /* Strictly occupy ONLY the left side */
+  max-width: 520px;
+  /* Strictly occupy ONLY the left side */
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.75);
   transition: transform 0.4s ease, border-color 0.4s ease;
 }
@@ -554,19 +576,29 @@ html, body {
    SECTION 6: MY GOAL
    ------------------------------------------------------------- */
 .goal-card-highlight {
-  border-color: var(--border-red);
-  background: linear-gradient(135deg, rgba(229, 9, 20, 0.15), rgba(14, 4, 7, 0.88));
+  border-color: 1px solid var(--border-red);
+  background: linear-gradient(135deg, rgba(229, 9, 20, 0.12), rgba(255, 255, 255, 0.03));
+  border-radius: 18px;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.goal-card-highlight:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px var(--primary-glow);
 }
 
 .goal-box {
   display: flex;
   align-items: flex-start;
   gap: 1.25rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--border-red);
-  border-radius: 20px;
-  padding: 1.75rem;
-  margin-bottom: 1.75rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
 .goal-icon {
@@ -583,15 +615,62 @@ html, body {
 }
 
 .goal-text {
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: #ffffff;
+  font-size: 0.9rem;
+  color: var(--text-muted);
 }
 
 .goal-text strong {
   color: var(--accent-gold);
   font-weight: 700;
 }
+
+.goal-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-glass);
+  border-radius: 20px;
+  padding: 1.75rem;
+  transition: all 0.3s ease;
+}
+
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  background: rgba(12, 0, 0, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.about-container h3 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.about-container .links-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  width=100%;
+  margin-top: 1rem;
+}
+
+.about-container .goal-card-highlight {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 220px;
+}
+
+
 
 .download-footer-box {
   display: flex;
@@ -634,80 +713,4 @@ html, body {
 
 .btn-secondary:hover {
   background: rgba(255, 255, 255, 0.16);
-}
-
-/* -------------------------------------------------------------
-   BOTTOM FIXED SCRUB PROGRESS BAR
-   ------------------------------------------------------------- */
-.scrub-bar-container {
-  position: fixed;
-  bottom: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 100;
-  width: 90%;
-  max-width: 600px;
-  background: rgba(14, 4, 7, 0.85);
-  backdrop-filter: blur(20px);
-  padding: 0.85rem 1.5rem;
-  border-radius: 30px;
-  border: 1px solid var(--border-glass);
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-}
-
-.scrub-status {
-  display: flex;
-  justify-content: space-between;
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-.scrub-track {
-  width: 100%;
-  height: 5px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 2.5px;
-  overflow: hidden;
-}
-
-.scrub-progress {
-  height: 100%;
-  width: 0%;
-  background: linear-gradient(90deg, var(--primary-red), var(--accent-gold));
-  border-radius: 2.5px;
-  transition: width 0.08s ease-out;
-}
-
-/* Animations */
-.fade-up {
-  opacity: 0;
-  transform: translateY(35px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.fade-up.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 900px) {
-  .left-glass-card {
-    max-width: 100%;
-    padding: 1.75rem;
-  }
-  .floating-header {
-    flex-direction: column;
-    gap: 0.75rem;
-    padding: 1rem;
-    border-radius: 20px;
-  }
-  .header-actions {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }
